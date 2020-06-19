@@ -1,0 +1,43 @@
+body {
+    background-color: #632741;
+  }
+
+.logo {
+    height: 200px;
+    width: 100%;
+}
+
+li {
+    height: 50px;
+    width: 75%;
+    font-size: 13pt;
+    text-align: left;
+    padding: 10pt;
+    background-color: gray;
+    margin: 5pt;
+    color: white;
+}
+.all-caps {
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+}
+
+img {
+    height: 10%;
+    width: 10%;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
