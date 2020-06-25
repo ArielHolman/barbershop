@@ -1,10 +1,70 @@
 .grid-container{
     display: grid;
-    grid-template-rows: 2fr, 1fr, 3fr, 2fr, 1fr, 1fr;
-    border: red solid 2pt;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 4fr 2fr .5fr;
+    grid-template-areas: 
+    "header header header"
+    "list list list"
+    "images images images"
+    "footer footer footer";
 }
 
-.logo {
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.section-one {
+    grid-area: list;
+    background-image: url("./images/main-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+.section-two {
+    grid-area: images;
+    background-color: green;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: hotpink;
+}
+
+ul{
+    margin-left: 60%;
+    list-style: none;
+    margin-right: 10%;
+}
+
+li {
+    height: 50px;
+    width: 75%;
+    font-size: 13pt;
+    text-align: left;
+    padding: 10pt;
+    background-color: gray;
+    margin: 5pt;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .logo {
     height: 200px;
     width: 30%;
     grid-row: 1/2;
@@ -23,7 +83,7 @@
 
 .section-two{
     grid-row: 4/5;
-    grid-template-columns: 2fr, 1fr, 1fr, 1fr, 2fr;
+   
 }
 
 .image-one{
@@ -47,16 +107,7 @@
     font-size: 20pt;
 }
 
-li {
-    height: 50px;
-    width: 75%;
-    font-size: 13pt;
-    text-align: left;
-    padding: 10pt;
-    background-color: gray;
-    margin: 5pt;
-    color: white;
-}
+
 .all-caps {
     background-color: black;
     color: white;
@@ -74,4 +125,4 @@ img {
     align-items: center;
     list-style-type: none;
     padding: 5px;
-}
+} */
