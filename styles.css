@@ -9,6 +9,10 @@
     "footer footer footer";
 }
 
+body {
+    font-family: 'Krona One', sans-serif;
+}
+
 header {
     grid-area: header;
     background-color: blue;
@@ -34,22 +38,31 @@ header {
 }
 
 ul{
-    margin-left: 60%;
+    margin-left: 65%;
     list-style: none;
-    margin-right: 10%;
+    margin-right: 9%;
+    margin-top: 10%;
 }
 
 li {
     height: 50px;
     width: 75%;
-    font-size: 13pt;
+    font-size: 15pt;
     text-align: left;
-    padding: 10pt;
-    background-color: gray;
-    margin: 5pt;
+    padding: 30pt;
+    background-color:#1A455D;
+    opacity: .8;
+    margin: 15pt;
     color: white;
 }
 
+button {
+    margin-left: 73%;
+}
+
+.all-caps {
+    font-size: 23pt;
+}
 
 
 
