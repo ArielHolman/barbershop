@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-rows: .5fr 1.25fr .25fr;
     grid-template-areas: 
     "header header header"
     "contactForm contactForm contactForm"
@@ -10,7 +10,12 @@
 
 body {
     font-family: 'Krona One', sans-serif;
-    margin:0;
+    text-align: center;
+}
+
+.margins {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .header {
@@ -20,7 +25,7 @@ body {
 
 .contactForm {
     grid-area: contactForm;
-    background-color:pink;
+    background-color:#F7F8F7;
 }
 
 .footer {
@@ -64,17 +69,49 @@ a:link {
 }
 
 .nav > a {
-   margin-left: 200px;
-}
+    margin:0 30pt;
+    padding-bottom: 15pt;
+ }
 
 .nav a:hover {
     border-bottom: 5px solid #632741;
     color:#632741;
 }
 
+/* FORMS STYLES */
+h1{
+    background-color: #1A455D;
+    color:  #F7F8F7;
+    padding: 20pt;
+    margin: 20pt 310pt;
+}
 
+input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    align-content: center;
+    border: 2px solid #1A455D;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
 
-
+  .submit {
+    background-color:#4F99A4;
+    color:  #F7F8F7;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    font-style: bold;
+    margin-bottom: 100pt;
+}
+.submit:hover{
+    color: #1A455D;
+}
 
 /* Footer Styles */
 

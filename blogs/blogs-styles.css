@@ -1,16 +1,23 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 2fr .5fr;
-    grid-template-areas: 
-    "header header header"
-    "blog blog blog"
-    "footer footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-areas:
+    "header header"
+    "blog1 blog1"
+    "blog2 blog2"
+    "blog3 blog3"
+    "footer footer";
 }
 
 body {
     font-family: 'Krona One', sans-serif;
-    margin:0;
+    color:#1A455D;
+}
+
+.margins {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .header {
@@ -18,15 +25,34 @@ body {
     background-color:#F7F8F7;
 }
 
-.blog {
-    grid-area: blog;
-    background-color:green;
+.blog1 {
+    grid-area: blog1;
+    background-color:#F7F8F7;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.blog2 {
+    grid-area: blog2;
+    background-color:#F7F8F7;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.blog3 {
+    grid-area: blog3;
+    background-color:#F7F8F7;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .footer {
     grid-area: footer;
     background-color: #632741;
-    padding:.5% 42%;
+    padding:5pt 15pt;
     text-align: center;
 }
 
@@ -64,7 +90,8 @@ a:link {
 }
 
 .nav > a {
-   margin-left: 200px;
+   margin:0 30pt;
+   padding-bottom: 15pt;
 }
 
 .nav a:hover {
@@ -72,9 +99,38 @@ a:link {
     color:#632741;
 }
 
+.bloginfo {
+    border: 4px solid #1A455D;
+    max-width: 600px;
+    min-width: 400px;
+    height: 300px;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    margin-right: 5px;
+}
 
+.blog-img {
+    border: 4px solid #1A455D;
+}
 
+h3 {
+    margin-top: 40pt;
+    font-size: 15pt;
+}
 
+button {
+    background-color:#4F99A4;
+    color:  #F7F8F7;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    font-style: bold;
+}
+
+button:hover{
+    color: #1A455D;
+}
 
 /* Footer Styles */
 
@@ -84,6 +140,6 @@ a:link {
     text-align: center;
 }
  
- footer > small {
+footer > small {
      color: #F7F8F7;
 }

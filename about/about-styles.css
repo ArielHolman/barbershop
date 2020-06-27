@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr 2fr .5fr;
+    grid-template-rows: 1fr 2fr 2fr .4fr;
     grid-template-areas: 
     "header header header"
     "image image image"
@@ -11,7 +11,11 @@
 
 body {
     font-family: 'Krona One', sans-serif;
-    margin:0;
+}
+
+.margins {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .header {
@@ -21,12 +25,12 @@ body {
 
 .image {
     grid-area: image;
-    background-color:purple;
+    background-color:#F7F8F7;
 }
 
 .about {
     grid-area: about;
-    background-color:green;
+    background-color:#F7F8F7;
 }
 
 .footer {
@@ -55,6 +59,7 @@ body {
     justify-content: center;
     width: 100%; 
     text-decoration: none;
+    margin-bottom: 0;
 }
 
 a:visited {
@@ -70,17 +75,52 @@ a:link {
 }
 
 .nav > a {
-   margin-left: 200px;
-}
+    margin:0 30pt;
+    padding-bottom: 15pt;
+ }
 
 .nav a:hover {
     border-bottom: 5px solid #632741;
     color:#632741;
 }
 
+/* image and header style */
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50pt;
+}
 
+h1 {
+    background-color: #632741;
+    color: #F7F8F7;
+    font-size: 35px;
+    text-align: center;
+    margin: 0 250px;
+    padding: 30px;
+}
 
+.about-image {
+    height: 550px;
+    width: 1000px;
+    border: black solid 5pt;
+    margin: 25pt;
+}
 
+section{
+    margin: 40pt 270pt;
+    text-align: center;
+}
+
+h3 {
+    font-size: 17pt;
+}
+
+p {
+    font-size: 13pt;
+}
 
 /* Footer Styles */
 
