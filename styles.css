@@ -57,7 +57,6 @@ header {
 }
 
 .nav {
-    height: 15%;
     color: #F7F8F7;
     font-size: 25px;
     padding: 10px;
@@ -82,7 +81,7 @@ a:link {
 .nav > a {
     margin:0 30pt;
     padding-bottom: 15pt;
- }
+}
 
 .nav a:hover {
     border-bottom: 5px solid #632741;
@@ -95,13 +94,13 @@ ul{
     margin-left: 65%;
     list-style: none;
     margin-right: 9%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 li {
     height: 50px;
     width: 75%;
-    font-size: 15pt;
+    font-size: 12pt;
     text-align: left;
     padding: 30pt;
     background-color:#1A455D;
@@ -112,7 +111,7 @@ li {
 }
 
 button {
-    margin-left: 73%;
+    margin-left: 72%;
     background-color:#4F99A4;
     color:  #F7F8F7;
     padding: 20px 50px;
@@ -129,6 +128,10 @@ button:hover{
 
 .all-caps {
     font-size: 23pt;
+}
+
+.li-all-caps {
+    font-size: 19pt;
 }
 
 .image-container {
@@ -174,6 +177,6 @@ button:hover{
     text-align: center;
 }
  
- footer > small {
-     color: #F7F8F7;
+footer > small {
+    color: #F7F8F7;
 }

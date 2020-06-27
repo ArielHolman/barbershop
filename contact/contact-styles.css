@@ -71,7 +71,7 @@ a:link {
 .nav > a {
     margin:0 30pt;
     padding-bottom: 15pt;
- }
+}
 
 .nav a:hover {
     border-bottom: 5px solid #632741;
@@ -88,7 +88,7 @@ h1{
 
 input[type=text], select, textarea {
     width: 60%;
-    padding: 12px 20px;
+    padding: 5px 20px;
     margin: 10px 0;
     display: inline-block;
     align-content: center;
@@ -98,9 +98,9 @@ input[type=text], select, textarea {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     font-size: 15px;
-  }
+}
 
-  .submit {
+.submit {
     background-color:#4F99A4;
     color:  #F7F8F7;
     padding: 10px 40px;
@@ -109,6 +109,7 @@ input[type=text], select, textarea {
     font-style: bold;
     margin-bottom: 100pt;
 }
+
 .submit:hover{
     color: #1A455D;
 }
@@ -121,6 +122,6 @@ input[type=text], select, textarea {
     text-align: center;
 }
  
- footer > small {
+footer > small {
      color: #F7F8F7;
 }

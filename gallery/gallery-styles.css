@@ -100,16 +100,12 @@ a:link {
 .nav > a {
     margin:0 30pt;
     padding-bottom: 15pt;
- }
+}
 
 .nav a:hover {
     border-bottom: 5px solid #632741;
     color:#632741;
 }
-
-
-
-
 
 /* Footer Styles */
 

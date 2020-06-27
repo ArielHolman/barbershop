@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr .4fr;
+    grid-template-rows: 1fr 1.6fr 1.9fr .4fr;
     grid-template-areas: 
     "header header header"
     "image image image"
@@ -77,7 +77,7 @@ a:link {
 .nav > a {
     margin:0 30pt;
     padding-bottom: 15pt;
- }
+}
 
 .nav a:hover {
     border-bottom: 5px solid #632741;
@@ -90,7 +90,7 @@ a:link {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 50pt;
+    /* padding-top: 30pt; */
 }
 
 h1 {
@@ -106,7 +106,7 @@ h1 {
     height: 550px;
     width: 1000px;
     border: black solid 5pt;
-    margin: 25pt;
+    margin:0px ;
 }
 
 section{
@@ -130,6 +130,6 @@ p {
     text-align: center;
 }
  
- footer > small {
+footer > small {
      color: #F7F8F7;
 }
