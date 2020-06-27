@@ -1,0 +1,89 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-areas: 
+    "header header header"
+    "gallery gallery gallery"
+    "footer footer footer";
+}
+
+body {
+    font-family: 'Krona One', sans-serif;
+    margin:0;
+}
+
+.header {
+    grid-area: header;
+    background-color:#F7F8F7;
+}
+
+.gallery {
+    grid-area: gallery;
+    background-color:blue;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #632741;
+    padding:.5% 42%;
+    text-align: center;
+}
+
+/* Nav and Logo */
+
+.logo {
+    display: block;    
+    padding: 4px;    
+    width: 550px;    
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+.nav {
+    height: 15%;
+    color: #F7F8F7;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #CEB458;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color: #CEB458;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav > a {
+   margin-left: 200px;
+}
+
+.nav a:hover {
+    border-bottom: 5px solid #632741;
+    color:#632741;
+}
+
+
+
+
+
+/* Footer Styles */
+
+.smLinks > a {
+    padding: 10px;
+    font-size: 35pt;
+    text-align: center;
+}
+ 
+ footer > small {
+     color: #F7F8F7;
+}
