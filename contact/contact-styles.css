@@ -1,9 +1,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
-    grid-template-rows: .25fr 1fr .15fr;
+    grid-template-rows: .25fr 1fr 1fr .15fr;
     grid-template-areas:
     "header header header"
+    ". contactForm ."
     ". contactForm ."
     "footer footer footer";
 }
@@ -15,6 +16,10 @@
 .contactForm {
     grid-area: contactForm;
     background-color:#F7F8F7;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 /* FORMS STYLES */
