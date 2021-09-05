@@ -1,13 +1,13 @@
 .grid-container {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
     grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
     grid-template-areas:
-    "header header header"
-    "img1 img1 img1"
-    "img2 img2 img2"
-    "img3 img3 img3"
-    "footer footer footer";
+    "header header header header header"
+    ". img1 img1 img1 ."
+    ". img2 img2 img2 ."
+    ". img3 img3 img3 ."
+    "footer footer footer footer footer";
 }
 
 .header {
