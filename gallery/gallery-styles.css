@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr 1fr 1fr .25fr;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header"
     "img1 img1 img1"
     "img2 img2 img2"
@@ -10,19 +10,8 @@
     "footer footer footer";
 }
 
-body {
-    font-family: 'Krona One', sans-serif;
-    margin:0;
-}
-
-.margins {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
 .header {
     grid-area: header;
-    background-color:#F7F8F7;
 }
 
 .image-container1 {
@@ -30,7 +19,7 @@ body {
     background-color:#F7F8F7;
     display: flex;
     flex-direction: row;
-    padding-top: 40pt;
+    padding-top: 20pt;
 }
 
 .image-container2 {
@@ -46,75 +35,11 @@ body {
     background-color:#F7F8F7;
     display: flex;
     flex-direction: row;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
 }
 
 .column {
     flex: 33.33%;
     text-align: center;
-}
-
-.border {
-    border: 4px solid #1A455D;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #632741;
-    padding:.5% 42%;
-    text-align: center;
-}
-
-/* Nav and Logo */
-
-.logo {
-    display: block;    
-    padding: 4px;    
-    width: 550px;    
-    margin-left: auto;    
-    margin-right: auto;
-}
-
-.nav {
-    height: 15%;
-    color: #F7F8F7;
-    font-size: 25px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    text-decoration: none;
-}
-
-a:visited {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:link {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.nav > a {
-    margin:0 30pt;
-    padding-bottom: 15pt;
-}
-
-.nav a:hover {
-    border-bottom: 5px solid #632741;
-    color:#632741;
-}
-
-/* Footer Styles */
-
-.smLinks > a {
-    padding: 10px;
-    font-size: 35pt;
-    text-align: center;
-}
- 
- footer > small {
-     color: #F7F8F7;
 }

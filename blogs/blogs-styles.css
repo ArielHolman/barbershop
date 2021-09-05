@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: .30fr .9fr .9fr .9fr .30fr;
+    grid-template-rows: .75fr 1.1fr 1.1fr 1.1fr .25fr;
     grid-template-areas:
     "header header"
     "blog1 blog1"
@@ -10,19 +10,8 @@
     "footer footer";
 }
 
-body {
-    font-family: 'Krona One', sans-serif;
-    color:#1A455D;
-}
-
-.margins {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
 .header {
     grid-area: header;
-    background-color:#F7F8F7;
 }
 
 .blog1 {
@@ -49,56 +38,6 @@ body {
     padding-top: 5px;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: #632741;
-    padding:5pt 15pt;
-    text-align: center;
-}
-
-/* Nav and Logo */
-
-.logo {
-    display: block;    
-    padding: 4px;    
-    width: 550px;    
-    margin-left: auto;    
-    margin-right: auto;
-}
-
-.nav {
-    height: 15%;
-    color: #F7F8F7;
-    font-size: 25px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    text-decoration: none;
-}
-
-a:visited {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:link {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.nav > a {
-   margin:0 30pt;
-   padding-bottom: 15pt;
-}
-
-.nav a:hover {
-    border-bottom: 5px solid #632741;
-    color:#632741;
-}
-
 .bloginfo {
     border: 4px solid #1A455D;
     max-width: 600px;
@@ -110,6 +49,10 @@ a:link {
     margin-right: 5px;
 }
 
+.bloginfo p{
+    font-size:15px;
+}
+
 .blog-img {
     border: 4px solid #1A455D;
 }
@@ -119,27 +62,16 @@ h3 {
     font-size: 15pt;
 }
 
-button {
+.blog-button {
     background-color:#4F99A4;
     color:  #F7F8F7;
-    padding: 10px 40px;
+    padding: 15px 20px;
     font-size: 20px;
     border-radius: 12px;
     font-style: bold;
+    margin-top:60px;
 }
 
-button:hover{
+.blog-button:hover{
     color: #1A455D;
-}
-
-/* Footer Styles */
-
-.smLinks > a {
-    padding: 10px;
-    font-size: 35pt;
-    text-align: center;
-}
- 
-footer > small {
-    color: #F7F8F7;
 }

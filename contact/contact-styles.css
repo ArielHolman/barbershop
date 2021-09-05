@@ -1,26 +1,15 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 1.25fr .25fr;
-    grid-template-areas: 
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: .25fr 1fr .15fr;
+    grid-template-areas:
     "header header header"
-    "contactForm contactForm contactForm"
+    ". contactForm ."
     "footer footer footer";
-}
-
-body {
-    font-family: 'Krona One', sans-serif;
-    text-align: center;
-}
-
-.margins {
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 .header {
     grid-area: header;
-    background-color:#F7F8F7;
 }
 
 .contactForm {
@@ -28,68 +17,20 @@ body {
     background-color:#F7F8F7;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: #632741;
-    padding:.5% 42%;
-    text-align: center;
-}
-
-/* Nav and Logo */
-
-.logo {
-    display: block;    
-    padding: 4px;    
-    width: 550px;    
-    margin-left: auto;    
-    margin-right: auto;
-}
-
-.nav {
-    height: 15%;
-    color: #F7F8F7;
-    font-size: 25px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    text-decoration: none;
-}
-
-a:visited {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:link {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.nav > a {
-    margin:0 30pt;
-    padding-bottom: 15pt;
-}
-
-.nav a:hover {
-    border-bottom: 5px solid #632741;
-    color:#632741;
-}
-
 /* FORMS STYLES */
 h1{
     background-color: #1A455D;
-    color:  #F7F8F7;
-    padding: 20pt;
-    margin: 20pt 310pt;
+    color: #F7F8F7;
+    padding: 10pt;
+    font-size:35px;
+    width:100%;
+    text-align:center;
 }
 
-input[type=text], select, textarea {
+input, select, textarea {
     width: 60%;
     padding: 5px 20px;
-    margin: 10px 0;
+    margin: 5px;
     display: inline-block;
     align-content: center;
     border: 2px solid #1A455D;
@@ -100,6 +41,11 @@ input[type=text], select, textarea {
     font-size: 15px;
 }
 
+input, textarea{
+    width:80%;
+    margin-left:10%;
+}
+
 .submit {
     background-color:#4F99A4;
     color:  #F7F8F7;
@@ -107,21 +53,11 @@ input[type=text], select, textarea {
     font-size: 20px;
     border-radius: 12px;
     font-style: bold;
-    margin-bottom: 100pt;
+    margin-bottom: 10%;
+    width:30%;
+    margin-left:60%;
 }
 
 .submit:hover{
     color: #1A455D;
-}
-
-/* Footer Styles */
-
-.smLinks > a {
-    padding: 10px;
-    font-size: 35pt;
-    text-align: center;
-}
- 
-footer > small {
-     color: #F7F8F7;
 }

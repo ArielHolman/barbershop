@@ -1,31 +1,20 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.6fr 1.9fr .4fr;
-    grid-template-areas: 
+    grid-template-rows: .25fr 1fr 1.25fr .25fr;
+    grid-template-areas:
     "header header header"
     "image image image"
     "about about about"
     "footer footer footer";
 }
 
-body {
-    font-family: 'Krona One', sans-serif;
-}
-
-.margins {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
 .header {
     grid-area: header;
-    background-color:#F7F8F7;
 }
 
 .image {
     grid-area: image;
-    background-color:#F7F8F7;
 }
 
 .about {
@@ -33,64 +22,12 @@ body {
     background-color:#F7F8F7;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: #632741;
-    padding:.5% 42%;
-    text-align: center;
-}
-
-/* Nav and Logo */
-
-.logo {
-    display: block;    
-    padding: 4px;    
-    width: 550px;    
-    margin-left: auto;    
-    margin-right: auto;
-}
-
-.nav {
-    height: 15%;
-    color: #F7F8F7;
-    font-size: 25px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    text-decoration: none;
-    margin-bottom: 0;
-}
-
-a:visited {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:link {
-    color: #CEB458;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.nav > a {
-    margin:0 30pt;
-    padding-bottom: 15pt;
-}
-
-.nav a:hover {
-    border-bottom: 5px solid #632741;
-    color:#632741;
-}
-
-/* image and header style */
+/* image style */
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* padding-top: 30pt; */
 }
 
 h1 {
@@ -100,6 +37,7 @@ h1 {
     text-align: center;
     margin: 0 250px;
     padding: 30px;
+    width:100%;
 }
 
 .about-image {
@@ -119,17 +57,5 @@ h3 {
 }
 
 p {
-    font-size: 13pt;
-}
-
-/* Footer Styles */
-
-.smLinks > a {
-    padding: 10px;
-    font-size: 35pt;
-    text-align: center;
-}
- 
-footer > small {
-     color: #F7F8F7;
+    font-size: 14pt;
 }
